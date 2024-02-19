@@ -1,0 +1,22 @@
+[
+  {
+    "imagem": "assets/img/trofeus/amazonense-2-divisao.png",
+    "quantidade": "01",
+    "titulo": "CAMPEONATO AMAZONENSE 2º DIVISAO"
+  },
+  {
+    "imagem": "assets/img/trofeus/amazonense-1-divisao.png",
+    "quantidade": "01",
+    "titulo": "CAMPEONATO AMAZONENSE 1º DIVISAO"
+  },
+  {
+    "imagem": "assets/img/trofeus/brasileirao-serie-c.png",
+    "quantidade": "01",
+    "titulo": "CAMPEONATO BRASILEIRO SERIE C"
+  },
+  {
+    "imagem": "assets/img/trofeus/trofeu-copa-verde.png",
+    "quantidade": "00",
+    "titulo": "LOADING..."
+  }
+]

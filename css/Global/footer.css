@@ -1,0 +1,66 @@
+.footer-bg {
+  width: 100%;
+  height: auto;
+  background-color: var(--cor-0);
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* BOTAO VOLTAR AO TOPO */
+.footer-bg #btn-topo {
+  z-index: 2;
+  position: absolute;
+  background-color: var(--cor-5);
+  padding: 10px;
+  top: -20px;
+  right: 20px;
+  cursor: pointer;
+}
+.footer-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.footer-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-side {
+  width: auto;
+  margin-right: auto;
+}
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* CADA REDE SOCIAL */
+.redes-sociais a {
+  filter: invert();
+  margin: 6px;
+}
+
+@media (max-width: 500px) {
+  .footer-bg {
+    padding: 20px 0;
+  }
+  .footer-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .left-side {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .redes-sociais a {
+    width: 30px;
+  }
+  .right-side > p {
+    border-top: 1px solid var(--cor-1);
+    padding-top: 10px;
+  }
+}

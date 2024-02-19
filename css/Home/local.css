@@ -1,0 +1,75 @@
+.local-bg {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: var(--cor-6);
+  padding: 60px 0px;
+}
+.local-bg::before {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background: url("/assets/img/grunge-white.png");
+  top: -9px;
+  content: "";
+  display: block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.local-container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.local-conteudo {
+  display: flex;
+  justify-content: space-between;
+}
+.local a {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  margin-top: 5px;
+  padding: 6px;
+  border-bottom: 2px solid var(--cor-0);
+  background-color: var(--cor-7);
+  transition: 0.3s ease-in-out;
+}
+.local a:hover {
+  background-color: var(--cor-6);
+  border-bottom: 2px solid var(--cor-2);
+}
+
+@media (max-width: 800px) {
+  .local-bg {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .local-container {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .local-bg {
+    padding: 40px;
+  }
+  .local-container {
+    text-align: center;
+  }
+  .local-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .local {
+    text-align: left;
+  }
+  .local p {
+    font: 400 0.8rem/1.35 "Montserrat", sans-serif;
+  }
+}

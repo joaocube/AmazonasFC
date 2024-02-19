@@ -1,0 +1,15 @@
+/* GLOBAL STYLES */
+@import "./global.css";
+@import "../Utilitarios/cores.css";
+@import "../Utilitarios/tipografia.css";
+@import "./header.css";
+@import "../Home/slider.css";
+@import "../Home/status.css";
+@import "../Home/feed.css";
+@import "../Home/oncatv.css";
+@import "../Home/fotos.css";
+@import "../Home/galeria.css";
+@import "../Home/trofeus.css";
+@import "../Home/patrocinios.css";
+@import "../Home/local.css";
+@import "./footer.css";

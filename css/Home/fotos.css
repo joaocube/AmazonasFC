@@ -1,0 +1,100 @@
+.fotos-bg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+.fotos-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.foto-titlearea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--cor-1);
+  margin-bottom: 10px;
+}
+.fotos-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* CARD DEFINITIONS */
+.foto-card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+.foto-card:hover {
+  h1 {
+    color: var(--cor-6);
+  }
+  img {
+    scale: 1.05;
+    opacity: 0.8;
+  }
+}
+.foto-card figure {
+  display: block;
+  height: 300px;
+  overflow: hidden;
+  background-color: var(--cor-0);
+}
+.foto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: 0.3s ease-in-out;
+}
+.foto-card figcaption {
+  padding: 10px 0px;
+}
+@media (max-width: 800px) {
+  .fotos-bg {
+    padding: 0 20px;
+  }
+  .foto-card {
+    width: 100%;
+    height: auto;
+  }
+  .foto-card figure {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .fotos-bg {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+  .fotos-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .foto-card {
+    width: 100%;
+    height: auto;
+  }
+  .foto-card figure {
+    height: 260px;
+  }
+  .foto-card figcaption h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font: 700 1.4rem/1 "Rajdhani", sans-serif;
+  }
+}
+
+@media (max-width: 500px) {
+  .foto-card figure {
+    height: 180px;
+  }
+}

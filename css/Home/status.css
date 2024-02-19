@@ -1,0 +1,91 @@
+.status-bg {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 80px 0;
+  background-color: var(--cor-0);
+  margin-bottom: 100px;
+}
+.status-bg::after {
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background: url("/assets/img/grunge.png");
+  content: "";
+  display: block;
+  width: 100%;
+  height: 12px;
+  bottom: -11px;
+  left: 0;
+  position: absolute;
+}
+/* ALINHAMENTO E WIDTH */
+.status-container {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.status-container .info {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--cor-6);
+  transition: 0.3s ease-in-out;
+}
+.info:hover {
+  scale: 1.06;
+}
+/* CONT DOS 2 CARDS  */
+.status-conteudo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+}
+.status-text {
+  max-width: 240px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+/* ONDE FICA O JOGO - JOGO ETC */
+.status-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.status-card img {
+  background-color: var(--cor-2);
+  padding: 10px;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .status-bg {
+    padding: 40px 0;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .status-container {
+    text-align: center;
+  }
+  .status-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .status-text {
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  /* ONDE FICA O JOGO - JOGO ETC */
+  .status-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .status-text h1 {
+    font: 700 1.6rem/0.8 "Rajdhani", sans-serif;
+  }
+}

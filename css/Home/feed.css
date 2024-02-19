@@ -1,0 +1,109 @@
+.feed-bg {
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+/* DEFINICOES DA SECTION */
+.feed-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* AREA DE TEXTO - TITLE CONT*/
+.feed-titlearea {
+  border-bottom: 1px solid var(--cor-1);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-conteudo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* CARD DEFINITIONS */
+.post-card {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.post-card:hover {
+  h1 {
+    color: var(--cor-6);
+  }
+  img {
+    scale: 1.05;
+    opacity: 0.8;
+  }
+}
+.post-card figure {
+  background-color: var(--cor-0);
+  height: 240px;
+  overflow: hidden;
+}
+.post-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s ease-in-out;
+}
+.post-card figcaption {
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .feed-bg {
+    padding: 0 20px;
+  }
+  .feed-conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .post-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+  .post-card figure {
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .post-card figcaption h1 {
+    font: 700 1.2rem/1 "Rajdhani", sans-serif;
+  }
+}
+
+@media (max-width: 500px) {
+  .feed-bg {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  .post-card {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    max-height: 160px;
+    overflow: hidden;
+  }
+  .post-card figure {
+    height: auto;
+  }
+  .post-card figcaption h1 {
+    font: 700 1rem/1 "Rajdhani", sans-serif;
+  }
+  .post-card figcaption p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+}

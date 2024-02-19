@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap");
+
+/* FONT MONTSERRAT */
+.font1-Pms {
+  font: 400 0.8rem/1.35 "Montserrat", sans-serif;
+}
+.font1-pBms {
+  font: 600 0.8rem/1.35 "Montserrat", sans-serif;
+}
+.font2-Bms {
+  font: 600 0.8rem/1.35 "Montserrat", sans-serif;
+}
+.font1-Rms-2 {
+  font: 400 0.9rem/1 "Montserrat", sans-serif;
+}
+.font1-Rms {
+  font: 400 1rem/1.35 "Montserrat", sans-serif;
+}
+.font1-Mms {
+  font: 500 1rem/1.35 "Montserrat", sans-serif;
+}
+.font1-Bms {
+  font: 600 1rem/1.35 "Montserrat", sans-serif;
+}
+/* FONT RAJDHANI */
+.font3-Prd {
+  font: 400 0.9rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-pBrd {
+  font: 700 0.9rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-pBrd-2 {
+  font: 700 1rem/1 "Rajdhani", sans-serif;
+}
+.font3-Rrd {
+  font: 400 1rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Mrd {
+  font: 500 1rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-SBrd {
+  font: 600 1.2rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Brd {
+  font: 700 1rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Brd2 {
+  font: 700 1.2rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Brd2-2 {
+  font: 700 1.4rem/1 "Rajdhani", sans-serif;
+}
+.font3-Brd3 {
+  font: 700 2rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Brd3-3 {
+  font: 700 1.6rem/1.35 "Rajdhani", sans-serif;
+}
+.font3-Brd3-4 {
+  font: 700 1.6rem/1 "Rajdhani", sans-serif;
+}
+.font3-Brd5 {
+  font: 700 3rem/1 "Rajdhani", sans-serif;
+}
+.font3-Brd5-2 {
+  font: 700 3rem/0.8 "Rajdhani", sans-serif;
+}
+.upc {
+  text-transform: uppercase;
+}

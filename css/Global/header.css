@@ -1,0 +1,116 @@
+header {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 10px 0;
+  background-color: var(--cor-0);
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--cor-1);
+}
+.header-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+.navbar ul li a {
+  padding: 10px;
+  display: block;
+}
+.navbar ul li a:hover {
+  background-color: var(--cor-7);
+}
+/* UL DENTRO DO LI */
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  display: none;
+  width: 120px;
+  padding: 10px;
+  background-color: var(--cor-0);
+}
+.navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid var(--cor-1);
+}
+.navbar ul li ul li ul {
+  left: 120px;
+  top: 0;
+}
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul {
+  display: initial;
+}
+#menu-bar {
+  display: none;
+}
+header label {
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header label {
+    display: initial;
+  }
+  header label > img {
+    filter: invert();
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid var(--cor-1);
+    background-color: var(--cor-0);
+    display: none;
+  }
+  .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    text-align: center;
+  }
+  /* ITEM DA PRIMEIRA LISTA */
+  .navbar ul li {
+    width: 100%;
+  }
+  /* LISTA DENTRO DA LISTA */
+  .navbar ul li ul {
+    position: relative;
+    width: 100%;
+    background: none;
+    padding: 0;
+  }
+  /* ITEM DENTRO DA LISTA DENTRO DA LISTA*/
+
+  .navbar ul li ul li {
+    background: none;
+  }
+  /* UL DENTRO DE HISTORIA POR EXEMPLO */
+  .navbar ul li ul li ul {
+    left: 0;
+    width: 120px;
+    text-align: left;
+  }
+  .navbar ul li ul li ul li {
+    background: none;
+  }
+
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+}

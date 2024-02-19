@@ -1,0 +1,73 @@
+.patrocinio-bg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
+.patrocinio-container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.patrocinio-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* CONTAINER DE CARDS PATROCINIO */
+.patrocinio-conteudo .patrocinio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px 0;
+}
+.patrocinio-card {
+  max-width: 200px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.patrocinio-card img {
+  max-width: 100%;
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+.patrocinio-card:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .patrocinio {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 600px) {
+  .patrocinio-bg {
+    margin-bottom: 40px;
+  }
+  .patrocinio-conteudo .patrocinio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .patrocinio-card {
+    filter: none;
+    opacity: 1;
+  }
+  .patrocinio-card img {
+    max-width: 100%;
+    opacity: 1;
+  }
+}

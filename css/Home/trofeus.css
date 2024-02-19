@@ -1,0 +1,91 @@
+.trofeus-bg {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background-color: var(--cor-3);
+  padding: 60px 0;
+  margin-bottom: 100px;
+}
+.trofeus-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.trofeus-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+/* CADA CARD - TROFEU */
+.trofeu-card {
+  max-width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.trofeu-card img {
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all 0.3s linear;
+}
+.trofeu-card:hover {
+  img {
+    filter: grayscale(0);
+    opacity: 1;
+  }
+}
+/* NOME DO CAMPEONATO CAMPEAO */
+.trofeu-card p {
+  display: inline-block;
+  max-width: 140px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .trofeus-bg {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+  .trofeu-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+    margin: 10px 20px;
+  }
+  .trofeu-card {
+    max-width: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .trofeus-conteudo {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+  }
+  .trofeu-card {
+    max-width: 90px;
+    text-align: center;
+    background-color: var(--cor-4);
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .trofeu-card img {
+    max-width: 70px;
+  }
+  .trofeu-card:nth-child(4) {
+    display: none;
+  }
+  .trofeu-card p {
+    font-size: 0.7rem;
+  }
+}
